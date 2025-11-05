@@ -40,9 +40,9 @@ export default function Home() {
               </div>
               <div className="mt-8 flex items-center gap-6 text-xs text-zinc-400">
                 <div className="flex -space-x-2">
-                  <img src="/logos/mark.png" className="w-8 h-8 rounded-full border border-white/10" alt="" />
-                  <img src="/logos/mark.png" className="w-8 h-8 rounded-full border border-white/10 opacity-80" alt="" />
-                  <img src="/logos/mark.png" className="w-8 h-8 rounded-full border border-white/10 opacity-60" alt="" />
+                  <img src="/logos/logo-brand.png" className="w-8 h-8 rounded-full border border-white/10" alt="" />
+                  <img src="/logos/logo-brand.png" className="w-8 h-8 rounded-full border border-white/10 opacity-80" alt="" />
+                  <img src="/logos/logo-brand.png" className="w-8 h-8 rounded-full border border-white/10 opacity-60" alt="" />
                 </div>
                 <span>Trusted by startups & nonprofits</span>
               </div>
@@ -50,8 +50,7 @@ export default function Home() {
             <div className="md:w-1/2 w-full">
               {/* Light background behind full lockup as requested */}
               <div className="rounded-2xl p-4 md:p-6 relative bg-white border border-black/10">
-                <img src="/logos/lockup.png" alt="Isekai lockup" className="w-full aspect-square object-contain rounded-xl" />
-                <div className="absolute right-4 top-4 bg-black/60 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">Brand system preview</div>
+                <img src="/logos/full-logo.png" alt="Isekai lockup" className="w-full aspect-square object-contain rounded-xl" />
               </div>
             </div>
           </div>
@@ -86,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* WORK */}
-      <section id="work" className="py-14 md:py-24">
+      {/* <section id="work" className="py-14 md:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
@@ -99,7 +98,7 @@ export default function Home() {
             {["Project A","Project B","Project C","Project D","Project E","Project F"].map((p, i) => (
               <a href="#" className="group card p-4 reveal" key={i}>
                 <div className="aspect-[4/3] rounded-lg overflow-hidden bg-zinc-900 flex items-center justify-center">
-                  <img src="/logos/mark.png" className="w-24 opacity-80 group-hover:opacity-100 transition" alt="" />
+                  <img src="/logos/logo-brand.png" className="w-24 opacity-80 group-hover:opacity-100 transition" alt="" />
                 </div>
                 <h3 className="mt-3 font-semibold">{p}</h3>
                 <p className="text-zinc-400 text-sm">Short description about the impact and stack used.</p>
@@ -107,7 +106,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* PROCESS */}
       <section id="process" className="py-14 md:py-24">
@@ -139,7 +138,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="reveal">
               <div className="rounded-xl border border-black/10 bg-white p-4">
-                <img src="/logos/lockup.png" alt="Isekai lockup large" className="w-full max-w-md rounded" />
+                <img src="/logos/full-logo.png" alt="Isekai lockup large" className="w-full max-w-md rounded" />
               </div>
             </div>
             <div className="reveal">

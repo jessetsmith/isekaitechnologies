@@ -48,11 +48,11 @@ const metadata = {
         title: "Isekai Technologies",
         description: "Apps · Websites · Media · Other tech products",
         images: [
-            "/logos/lockup.png"
+            "/logos/full-logo.png"
         ]
     },
     icons: {
-        icon: "/logos/mark.png"
+        icon: "/logos/logo-brand.png"
     }
 };
 function RootLayout({ children }) {

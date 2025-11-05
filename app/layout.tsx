@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Isekai Technologies",
     description: "Apps · Websites · Media · Other tech products",
-    images: ["/logos/lockup.png"]
+    images: ["/logos/full-logo.png"]
   },
-  icons: { icon: "/logos/mark.png" }
+  icons: { icon: "/logos/logo-brand.png" }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
