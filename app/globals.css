@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --brand:#e23b2a; --ink:#0d0d0f; --bg:#0a0a0b; --card:#121215; }
+html, body { @apply bg-bg text-white; }
+.glass { background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid rgba(255,255,255,.08); backdrop-filter: blur(8px); }
+.btn { @apply inline-flex items-center gap-2 font-bold rounded-2xl px-4 py-3 transition; background: var(--brand); }
+.btn:hover { box-shadow: var(--shadow-brand); transform: translateY(-1px); }
+.btn-ghost { background: transparent; border:1px solid rgba(255,255,255,.2); }
+.chip { @apply rounded-full text-xs px-2 py-1; background: rgba(226,59,42,.12); border:1px solid rgba(226,59,42,.3); color: #ffd6d2; }
+.card { @apply rounded-2xl border border-white/10 bg-card; }
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.show { opacity:1; transform:none; }

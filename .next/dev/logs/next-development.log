@@ -1,0 +1,202 @@
+[00:00:01.345] Server  LOG     
+[00:00:01.345] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:01.345] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:01.345] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:01.345] Server  LOG     
+[00:00:01.345] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:01.345] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:01.345] Server  LOG     
+[00:00:01.395] Server  LOG      ✓ Ready in 1256ms
+[00:00:05.069] Server  ERROR    ⨯ ./Downloads/isekai-technologies-nextjs/app/page.tsx:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | import { useEffect } from "react";
+  3 | import Nav from "@/components/Nav";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   useEffect(() => {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component Browser]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component SSR]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./Downloads/isekai-technologies-nextjs/app/page.tsx:3:1
+Module not found: Can't resolve '@/components/Nav'
+  1 | "use client";
+  2 | import { useEffect } from "react";
+> 3 | import Nav from "@/components/Nav";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Footer from "@/components/Footer";
+  5 |
+  6 | export default function Home() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component Browser]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component SSR]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:05.767] Browser ERROR   uncaughtError: Error: ./Downloads/isekai-technologies-nextjs/app/page.tsx:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | import { useEffect } from "react";
+  3 | import Nav from "@/components/Nav";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   useEffect(() => {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component Browser]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component SSR]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:06.120] Browser ERROR   ./Downloads/isekai-technologies-nextjs/app/page.tsx:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | import { useEffect } from "react";
+  3 | import Nav from "@/components/Nav";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   useEffect(() => {
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component Browser]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component SSR]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:06.120] Browser ERROR   ./Downloads/isekai-technologies-nextjs/app/page.tsx:3:1
+Module not found: Can't resolve '@/components/Nav'
+  1 | "use client";
+  2 | import { useEffect } from "react";
+> 3 | import Nav from "@/components/Nav";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Footer from "@/components/Footer";
+  5 |
+  6 | export default function Home() {
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component Browser]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component SSR]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:06.120] Browser ERROR   ./Downloads/isekai-technologies-nextjs/app/page.tsx:4:1
+Module not found: Can't resolve '@/components/Footer'
+  2 | import { useEffect } from "react";
+  3 | import Nav from "@/components/Nav";
+> 4 | import Footer from "@/components/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   useEffect(() => {
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component Browser]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component SSR]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:06.120] Browser ERROR   ./Downloads/isekai-technologies-nextjs/app/page.tsx:3:1
+Module not found: Can't resolve '@/components/Nav'
+  1 | "use client";
+  2 | import { useEffect } from "react";
+> 3 | import Nav from "@/components/Nav";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Footer from "@/components/Footer";
+  5 |
+  6 | export default function Home() {
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component Browser]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Client Component SSR]
+    ./Downloads/isekai-technologies-nextjs/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:49.501] Server  LOG      ✓ Compiled in 70ms
+[00:00:49.721] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:49.722] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:50.308] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Downloads...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-redeviation-bs-uid="raw0ybbz4kh"
+                        >
+                  ...
+
