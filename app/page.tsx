@@ -1,9 +1,12 @@
 "use client";
 import { useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  const [state, handleSubmit] = useForm("xeovjoga");
+
   useEffect(() => {
     const onScroll = () => {
       document.querySelectorAll<HTMLElement>(".reveal").forEach((el) => {
@@ -162,22 +165,84 @@ export default function Home() {
         <div className="mx-auto max-w-3xl px-6">
           <div className="card p-6 md:p-8 reveal">
             <h2 className="text-3xl font-bold">Tell us about your project</h2>
-            <p className="text-zinc-300 mt-2">We’ll reply within one business day.</p>
-            <form className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={(e)=>{e.preventDefault(); alert('Thanks! We\'ll be in touch.');}}>
-              <input className="card p-3" type="text" placeholder="Name *" required />
-              <input className="card p-3" type="email" placeholder="Email *" required />
-              <input className="card p-3 md:col-span-2" type="text" placeholder="Company or organization" />
-              <select className="card p-3">
-                <option>Project type</option>
-                <option>App</option>
-                <option>Website</option>
-                <option>Media</option>
-                <option>Integration / Other</option>
-              </select>
-              <input className="card p-3" type="text" placeholder="Budget range" />
-              <textarea className="card p-3 md:col-span-2" rows={5} placeholder="Tell us a bit about goals, timeline, and scope" />
-              <button className="btn mt-2 md:col-span-2" type="submit">Send message</button>
-            </form>
+            <p className="text-zinc-300 mt-2">We'll reply within one business day.</p>
+            {state.succeeded ? (
+              <div className="mt-6 p-6 rounded-2xl bg-green-500/10 border border-green-500/30">
+                <p className="text-green-400 font-semibold">Thanks for reaching out! We'll be in touch within one business day.</p>
+              </div>
+            ) : (
+              <form className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={handleSubmit}>
+                <div>
+                  <input 
+                    id="name"
+                    name="name"
+                    className="card p-3 w-full" 
+                    type="text" 
+                    placeholder="Name *" 
+                    required 
+                  />
+                  <ValidationError prefix="Name" field="name" errors={state.errors} />
+                </div>
+                <div>
+                  <input 
+                    id="email"
+                    name="email"
+                    className="card p-3 w-full" 
+                    type="email" 
+                    placeholder="Email *" 
+                    required 
+                  />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
+                </div>
+                <div className="md:col-span-2">
+                  <input 
+                    id="company"
+                    name="company"
+                    className="card p-3 w-full" 
+                    type="text" 
+                    placeholder="Company or organization" 
+                  />
+                  <ValidationError prefix="Company" field="company" errors={state.errors} />
+                </div>
+                <div>
+                  <select id="projectType" name="projectType" className="card p-3 w-full">
+                    <option value="">Project type</option>
+                    <option value="App">App</option>
+                    <option value="Website">Website</option>
+                    <option value="Media">Media</option>
+                    <option value="Integration / Other">Integration / Other</option>
+                  </select>
+                  <ValidationError prefix="Project Type" field="projectType" errors={state.errors} />
+                </div>
+                <div>
+                  <input 
+                    id="budget"
+                    name="budget"
+                    className="card p-3 w-full" 
+                    type="text" 
+                    placeholder="Budget range" 
+                  />
+                  <ValidationError prefix="Budget" field="budget" errors={state.errors} />
+                </div>
+                <div className="md:col-span-2">
+                  <textarea 
+                    id="message"
+                    name="message"
+                    className="card p-3 w-full" 
+                    rows={5} 
+                    placeholder="Tell us a bit about goals, timeline, and scope" 
+                  />
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
+                </div>
+                <button 
+                  className="btn mt-2 md:col-span-2" 
+                  type="submit" 
+                  disabled={state.submitting}
+                >
+                  {state.submitting ? "Sending..." : "Send message"}
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </section>

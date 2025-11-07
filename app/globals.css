@@ -12,3 +12,8 @@ html, body { @apply bg-bg text-white; }
 .card { @apply rounded-2xl border border-white/10 bg-card; }
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.show { opacity:1; transform:none; }
+
+/* Formspree validation errors */
+form .error {
+  @apply text-red-400 text-sm mt-1;
+}
